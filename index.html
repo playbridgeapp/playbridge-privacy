@@ -1,0 +1,52 @@
+Privacy Policy for PlayBridge TV
+
+  Last updated: March 25, 2026
+
+  Overview
+
+  PlayBridge TV is a media player app for Android TV that allows you to control playback from your phone over your local network. We do not collect, transmit,
+   or share any personal data with any server, service, or third party.
+
+  Data stored on your device
+
+  PlayBridge TV stores the following data locally on your device only:
+
+  - Playback history — URLs, titles, playback position, duration, and preferences (audio/subtitle language, video filters, playback speed) for recently played
+   media. This data never leaves your device.
+  - Pairing information — A randomly generated device ID and auth token used to authenticate your phone on your local network. A display name for your TV
+  (defaults to device model name).
+  - App settings — Server port, player preferences, and other configuration.
+
+  All data is stored using Android's DataStore and SharedPreferences APIs on the device itself.
+
+  Network usage
+
+  PlayBridge TV runs a local WebSocket server and uses mDNS (Bonjour/DNS-SD) for your phone to discover the TV on your local network. All communication
+  happens exclusively between your own devices on your local network. No data is sent to any external server or the developer.
+
+  The app also connects to URLs you explicitly provide (e.g. video streams, subtitle files) to play media.
+
+  Permissions
+
+  - Internet / Network access — Required to stream media content and communicate with your phone over your local network.
+  - Bluetooth — Used to allow your phone to connect as a remote control.
+  - Wi-Fi Multicast — Used for local network device discovery (mDNS).
+  - Foreground service — Keeps the local server running while the app is in use.
+  - Receive boot completed — Allows the server to start automatically when the TV is turned on.
+  - Notifications — Shows a status notification while the server is running.
+  - System Alert Window — Used to display a tiny invisible window that allows the app to launch the player from the background when a command is received
+  (required on Android 14+).
+  - Camera / Microphone / Audio settings — Declared to prevent crashes on certain Android TV devices that require these permissions to initialize media
+  playback. These hardware features are not used by the app.
+
+  Third-party services
+
+  PlayBridge TV does not use any analytics, advertising, crash reporting, or other third-party SDKs that collect data.
+
+  Children's privacy
+
+  PlayBridge TV does not knowingly collect any information from children.
+
+  Contact
+
+  If you have questions about this privacy policy, contact: playbridgeapp@gmail.com
