@@ -1,52 +1,60 @@
-Privacy Policy for PlayBridge TV
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayBridge TV — Privacy Policy</title>
+    <style>
+      body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
+      h1 { font-size: 1.5em; }
+      h2 { font-size: 1.1em; margin-top: 2em; }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy for PlayBridge TV</h1>
+    <p><em>Last updated: March 25, 2026</em></p>
 
-  Last updated: March 25, 2026
+    <h2>Overview</h2>
+    <p>PlayBridge TV is a media player app for Android TV that allows you to control playback from your phone over your local network. We do not collect,
+  transmit, or share any personal data with any server, service, or third party.</p>
 
-  Overview
+    <h2>Data stored on your device</h2>
+    <p>PlayBridge TV stores the following data locally on your device only:</p>
+    <ul>
+      <li><strong>Playback history</strong> — URLs, titles, playback position, duration, and preferences (audio/subtitle language, video filters, playback
+  speed) for recently played media. This data never leaves your device.</li>
+      <li><strong>Pairing information</strong> — A randomly generated device ID and auth token used to authenticate your phone on your local network. A
+  display name for your TV (defaults to device model name).</li>
+      <li><strong>App settings</strong> — Server port, player preferences, and other configuration.</li>
+    </ul>
+    <p>All data is stored using Android's DataStore and SharedPreferences APIs on the device itself.</p>
 
-  PlayBridge TV is a media player app for Android TV that allows you to control playback from your phone over your local network. We do not collect, transmit,
-   or share any personal data with any server, service, or third party.
+    <h2>Network usage</h2>
+    <p>PlayBridge TV runs a local WebSocket server and uses mDNS (Bonjour/DNS-SD) for your phone to discover the TV on your local network. All communication
+  happens exclusively between your own devices on your local network. No data is sent to any external server or the developer.</p>
+    <p>The app also connects to URLs you explicitly provide (e.g. video streams, subtitle files) to play media.</p>
 
-  Data stored on your device
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Internet / Network access</strong> — Required to stream media content and communicate with your phone over your local network.</li>
+      <li><strong>Bluetooth</strong> — Used to allow your phone to connect as a remote control.</li>
+      <li><strong>Wi-Fi Multicast</strong> — Used for local network device discovery (mDNS).</li>
+      <li><strong>Foreground service</strong> — Keeps the local server running while the app is in use.</li>
+      <li><strong>Receive boot completed</strong> — Allows the server to start automatically when the TV is turned on.</li>
+      <li><strong>Notifications</strong> — Shows a status notification while the server is running.</li>
+      <li><strong>System Alert Window</strong> — Used to display a tiny invisible window that allows the app to launch the player from the background when a
+  command is received (required on Android 14+).</li>
+      <li><strong>Camera / Microphone / Audio settings</strong> — Declared to prevent crashes on certain Android TV devices that require these permissions to
+  initialize media playback. These hardware features are not used by the app.</li>
+    </ul>
 
-  PlayBridge TV stores the following data locally on your device only:
+    <h2>Third-party services</h2>
+    <p>PlayBridge TV does not use any analytics, advertising, crash reporting, or other third-party SDKs that collect data.</p>
 
-  - Playback history — URLs, titles, playback position, duration, and preferences (audio/subtitle language, video filters, playback speed) for recently played
-   media. This data never leaves your device.
-  - Pairing information — A randomly generated device ID and auth token used to authenticate your phone on your local network. A display name for your TV
-  (defaults to device model name).
-  - App settings — Server port, player preferences, and other configuration.
+    <h2>Children's privacy</h2>
+    <p>PlayBridge TV does not knowingly collect any information from children.</p>
 
-  All data is stored using Android's DataStore and SharedPreferences APIs on the device itself.
-
-  Network usage
-
-  PlayBridge TV runs a local WebSocket server and uses mDNS (Bonjour/DNS-SD) for your phone to discover the TV on your local network. All communication
-  happens exclusively between your own devices on your local network. No data is sent to any external server or the developer.
-
-  The app also connects to URLs you explicitly provide (e.g. video streams, subtitle files) to play media.
-
-  Permissions
-
-  - Internet / Network access — Required to stream media content and communicate with your phone over your local network.
-  - Bluetooth — Used to allow your phone to connect as a remote control.
-  - Wi-Fi Multicast — Used for local network device discovery (mDNS).
-  - Foreground service — Keeps the local server running while the app is in use.
-  - Receive boot completed — Allows the server to start automatically when the TV is turned on.
-  - Notifications — Shows a status notification while the server is running.
-  - System Alert Window — Used to display a tiny invisible window that allows the app to launch the player from the background when a command is received
-  (required on Android 14+).
-  - Camera / Microphone / Audio settings — Declared to prevent crashes on certain Android TV devices that require these permissions to initialize media
-  playback. These hardware features are not used by the app.
-
-  Third-party services
-
-  PlayBridge TV does not use any analytics, advertising, crash reporting, or other third-party SDKs that collect data.
-
-  Children's privacy
-
-  PlayBridge TV does not knowingly collect any information from children.
-
-  Contact
-
-  If you have questions about this privacy policy, contact: playbridgeapp@gmail.com
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, contact: <a href="mailto:playbridgeapp@gmail.com">your-email@example.com</a></p>
+  </body>
+  </html>
