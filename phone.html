@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayBridge — Privacy Policy</title>
+    <style>
+      body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
+      h1 { font-size: 1.5em; }
+      h2 { font-size: 1.1em; margin-top: 2em; }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy for PlayBridge</h1>
+    <p><em>Last updated: March 26, 2026</em></p>
+
+    <h2>Overview</h2>
+    <p>PlayBridge is a browser and TV remote control app for Android that allows you to browse the web on your phone and send video content to your Android TV
+   over your local network. We do not collect, transmit, or share any personal data with any server, service, or third party.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>PlayBridge stores the following data locally on your device only:</p>
+    <ul>
+      <li><strong>Browsing history and bookmarks</strong> — URLs and titles of pages you visit, stored locally using a Room database. Never transmitted
+  anywhere.</li>
+      <li><strong>Browser tabs</strong> — Open tab state, stored locally for session restore.</li>
+      <li><strong>TV pairing information</strong> — A randomly generated auth token and the IP address/port of your paired TV, stored locally. Used only to
+  reconnect to your own TV on your local network.</li>
+      <li><strong>App settings</strong> — Preferences including TMDB API key, Debrid API keys, playback preferences, and plugin configuration. All stored
+  locally on your device.</li>
+      <li><strong>Downloaded media</strong> — Files downloaded via the app are stored in your device's local storage.</li>
+    </ul>
+    <p>All data is stored using Android's Room database and DataStore APIs on the device itself.</p>
+
+    <h2>Network usage</h2>
+    <p>PlayBridge communicates over your local network only to connect to your paired Android TV. No data about your usage, browsing, or content is sent to
+  the developer.</p>
+    <p>The app also connects to the following external services when explicitly configured by you:</p>
+    <ul>
+      <li><strong>TMDB (The Movie Database)</strong> — If you provide a TMDB API key, the app fetches movie and TV show metadata. Your usage is subject to
+  TMDB's privacy policy.</li>
+      <li><strong>Debrid services</strong> (Real-Debrid, AllDebrid, Premiumize) — If you provide API keys, the app communicates with these services to manage
+  your downloads. Your usage is subject to each service's own privacy policy.</li>
+      <li><strong>Stremio-compatible addon endpoints</strong> — If you install community addons, the app communicates with those addon servers to fetch
+  catalog and stream data. Each addon operates independently.</li>
+      <li><strong>Websites you browse</strong> — Standard web browsing traffic between your device and the sites you visit.</li>
+    </ul>
+    <p>None of this data is routed through or accessible to the developer.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Internet / Network access</strong> — Required for web browsing and communicating with your TV over the local network.</li>
+      <li><strong>Bluetooth</strong> — Used to connect to your Android TV as a Bluetooth remote control.</li>
+      <li><strong>Wi-Fi Multicast</strong> — Used for local network discovery (mDNS) to auto-detect your TV.</li>
+      <li><strong>Foreground service</strong> — Keeps media downloads running while the app is in the background.</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <p>PlayBridge uses GeckoView (Mozilla's browser engine) to render web pages. GeckoView's own privacy policy applies to its operation. PlayBridge does not
+  use any analytics, advertising, or crash reporting SDKs.</p>
+
+    <h2>Children's privacy</h2>
+    <p>PlayBridge does not knowingly collect any information from children.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, contact: <a href="mailto:playbridgeapp@gmail.com">playbridgeapp@gmail.com</a></p>
+  </body>
+  </html>
